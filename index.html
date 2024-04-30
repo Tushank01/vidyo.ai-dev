@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="./styles.css">
+     <script src="./script.js" ></script>
+</head>
+
+<body>
+    <div id="content">
+        <div style="margin-top: 10px;"></div>
+        <img src="https://assets-global.website-files.com/649330c3e40d813f90d8bb28/64e4ebe42de054f1f629f869_Layer_1%20(1).svg" loading="lazy" alt="vidyo.ai logo " class="lottie-logo-dark-mobile" width="100px" height="30px">
+        <hr>
+        <div id="top-text">Save 10x time & efforts with us</div>
+        <div id="tagline">Pay only for upload minutes. Download unlimited videos</div>
+        <div id="container">
+            <div id="ideal-plan">
+                <h2 id="plan-text">Suggesting an ideal plan for producing<br>around <span id="clip-count"
+                        style="color: rgb(249, 124, 145);">0</span> clips monthly</h2>
+            </div>
+            <div id="scrollbar-container">
+                <input id="scrollbar" type="range" min="0" max="200" value="0"
+                    oninput="updateTooltip(this.value); updateClipCount(this.value);">
+                <div id="tooltip">0</div>
+                <div id="start-label">50</div>
+                <div id="end-label">200</div
+
+>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+    <div class="card-container">
+        <div class="card"><strong>Free</strong><br><br><strong style="font-size: 1.2em; font-family: Arial, sans-serif;">INR 0
+                </strong>/month
+            <br><br><button class="transparent-button">Start for Free</button><br>
+            <br>
+
+            <hr>
+            <h5> &#10004 Free 75min per month</h5>
+            <h5> &#10004 720p render quality</h5>
+            <h5> &#10004 Multi-Lingual feature</h5>
+            <h5> &#10004 Cut magic</h5>
+
+        </div>
+        <div class="card"><strong>Essential</strong><br><br><strong style="font-size: 1.2em; font-family: Arial, sans-serif;">INR 1699
+                </strong>/month
+                
+            <br><br><button class="transparent-button"  >Choose your plan ></button><br>
+            <br>
+            <hr>
+            <h5> &#10004 Everything in free plan</h5>
+            <h5> &#10004 200-500 min per month</h5>
+            <h5> &#10004 1080p render quality</h5>
+            <h5> &#10004 Import with integrations (Drive, Dropbox, Box)</h5>
+            <h5> &#10004 Intelliclips</h5>
+
+        </div>
+        <div class="card"> <strong>Growth</strong> <button style="border-radius: 5px; background-color: greenyellow;" >recommended</button> <br><br><strong style="font-size: 1.2em; font-family: Arial, sans-serif;">INR 2099
+                </strong>/month
+            <br><br><button class="transparent-button">Choose your plan ></button><br>
+            <br>
+            <hr>
+            <h5 > &#10004 Everything in Essential plan</h5>
+            <h5> &#10004 200-1000 mins per month</h5>
+            <h5> &#10004 1080p render quality</h5>
+            <h5> &#10004 Bulk export (upto 5)</h5>
+            <h5> &#10004 Bulk multi-social publishing</h5>
+        </div>
+
+        <div class="card"> <strong>Custom</strong> <br><br><strong style="font-size: 1.2em; font-family: Arial, sans-serif;"
+                id="custom-price">INR 5599
+                </strong>/month
+                
+                <br><br><button class="transparent-button">Choose your plan ></button><br>
+                <br>
+                <hr>
+                
+            <h5 > &#10004 Everything in Growth plan</h5>
+            <h5> &#10004 900 or more mins per month</h5>
+            <h5>select minutes</h5>
+            <button class="drop-down" onclick="toggleDropdown()">75 min <img src="./arrow-down-sign-to-navigate.png" alt="" style="width: 10px; height: 10px;" > </a> </button>            
+                
+            <br>
+        
+            <div class="dropdown">
+                <div class="dropdown-content">
+                    <a href="#" onclick="selectOption(this)">75 min</a>
+                    <a href="#" onclick="selectOption(this)">500 min</a>
+                    <a href="#" onclick="selectOption(this)">800 min</a>
+                    <a href="#" onclick="selectOption(this)">1500 min</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <button class="button" onclick="toggleTable()">View all features</button>
+
+    <div style="width: 90%;">
+        <table>
+            <tr>
+                <th style="text-align: left; padding-left: 40px;">Feature</th>
+                <th style="text-align: left; padding-left: 40px;">Free</th>
+                <th style="text-align: left; padding-left: 40px;">Essential</th>
+                <th style="text-align: left; padding-left: 40px;">Growth</th>
+                <th style="text-align: left; padding-left: 40px;">Culture</th>
+            </tr>
+            <tr>
+                <td style="font-size:xx-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Core</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> <img src="./arrow-down-sign-to-navigate.png" alt="" width="20px" height="20px" ></td>
+                
+            </tr>
+            <tr>
+                <td>Minute per month</td>
+                <td>&#10004;</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Render Quality</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Import with youtube or Computer upload</td>
+                <td>&#10004;</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>AI Subtitles</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Multi-lingual feature</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>chapters</td>
+                <td>&#10008;</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>credit saver</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Intelliclips</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Virality score</td>
+                <td>&#10008;</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Bulk export</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Multi-aspect ratio</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Deafult template</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>create custom clip</td>
+                <td>&#10004;</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>cut magic</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Auto-emoji</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr
+
+>
+            <tr>
+                <td>Funny-caption</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Progress bar</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Stock media</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td>Background audio</td>
+                <td>&#10008;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+                <td>&#10004;</td>
+            </tr>
+            <tr>
+                <td style="font-size:xx-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Brandkit</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> <img src="./arrow-down-sign-to-navigate.png" alt="" width="20px" height="20px" ></td>
+                
+            </tr>
+            <tr>
+                <td style="font-size:xx-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Social</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> <img src="./arrow-down-sign-to-navigate.png" alt="" width="20px" height="20px" ></td>
+                
+            </tr>
+            <tr>
+                <td style="font-size:xx-large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Metadata</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> <img src="./arrow-down-sign-to-navigate.png" alt="" width="20px" height="20px" ></td>
+                
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <br>
+
+    
+</body>
+
+</html>
